@@ -51,45 +51,76 @@ Build visualizations to communicate findings effectively.
 * List your business requirements and a rationale to map them to the Data Visualisations
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+The analysis of the online retail transaction dataset was conducted to derive insights into customer purchasing patterns, product performance, and sales trends. The primary goal was to understand how customers interact with the platform, identify popular products, and assess the impact of various factors on sales.
+The analysis was carried out using Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly) and involved the following techniques:
+
+1. ### Data Cleaning & Preprocessing
+
+*   Removed missing values for critical fields (CustomerID, Country, InvoiceDate, UnitPrice, Quantity).
+*   Corrected data types (converted dates to datetime objects).
+*    Removed duplicate records.
+
+2. ### Feature Engineering
+
+*   Created Sales = UnitPrice × Quantity.
+*   Extracted Month (full name) and Day (day name) from the transaction date.
+*  Grouped and aggregated data for:
+               * Sales per country
+               * Sales per customer
+               * Monthly and weekly sales trends
+
+
+
+* Encoded categorical values where necessary for analysis.
+
+3. ### Descriptive Statistics
+
+* Calculated total revenue, average order value, and number of unique customers.
+* Identified top-selling products and most frequent buyers.
+
+4. ### Trend Analysis
+
+* Monthly, weekly, and daily sales patterns visualized.
+* Seasonal variations in revenue identified.
+
+5. ### Customer Behavior Analysis
+* Customer Purchase Frequency (how many times each customer made a purchase).
+* Sales contribution per customer segment.
+* Average spending per customer.
+
+6.Product Analysis
+
+* Top 10 products by quantity sold.
+* Top 10 products by revenue.
+
+7.Geographical Analysis
+
+* Revenue contribution by country.
+*Country-wise distribution of customers and purchases.
+
+8. Data Visualization
+
+Matplotlib: Line charts, bar charts, scatter plots for static analysis.
+
+Seaborn: Statistical plots including boxplots, histograms, and heatmaps.
+
+Plotly: Interactive bar charts, 
 
 I used generative AI tools to brainstorm ideas for data visualizations and to optimize code snippets for data processing tasks. These tools helped me quickly iterate on design concepts and improve the efficiency of my code.
 
-## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
-
-## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
 
 
-
-## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* Most the codes are adapted from LMS Code Institute (Learning Material). 
+* While I have written the majority of the code myself, I have also referenced various online resources to help with specific challenges.
+When I found code is not working or givig error then the I used Copilot to find the direct solution to the problem and adapted according to my own understanding. 
 
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
 
 
 
 ## Acknowledgements (optional)
 * Thank the people who provided support through this project.
+I Acknowledge the support of my mentor, who provided valuable feedback and guidance throughout the project. Their insights helped me refine my analysis and improve the overall quality of the work.
