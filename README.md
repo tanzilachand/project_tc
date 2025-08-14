@@ -10,10 +10,7 @@
 Data source: https://www.kaggle.com/datasets/abhishekrp1517/online-retail-transactions-dataset 
 
 
-
-
-
-
+* Dataset description: The dataset contains online retail transaction data, including customer identifiers, product details, transaction dates, quantities, and prices. It is structured to facilitate analysis of customer behaviour, product popularity, and sales trends.
 
 ## Business Requirements
 * Data analysis goals: Analyse online retail transaction data to understand customer behaviour, identify popular products, and optimise pricing and marketing strategies. Provide insights into customer behaviour, popular products, and pricing strategies to improve sales and marketing efforts.
@@ -45,10 +42,7 @@ The "Online Retail Transaction" dataset contains information on customer transac
 ### Load
 Store and cleaned and transformed data in a suitable format (e.g., CSV, database) for analysis.
 
-Build visualizations to communicate findings effectively.
-
-## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+### Analysis
 
 ## Analysis techniques used
 The analysis of the online retail transaction dataset was conducted to derive insights into customer purchasing patterns, product performance, and sales trends. The primary goal was to understand how customers interact with the platform, identify popular products, and assess the impact of various factors on sales.
