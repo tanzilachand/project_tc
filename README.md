@@ -6,20 +6,46 @@
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+* Project Example Idea 4: Online Retail Transaction Analysis
+Data source: https://www.kaggle.com/datasets/abhishekrp1517/online-retail-transactions-dataset 
+
+
+
+
+
 
 
 ## Business Requirements
-* Describe your business requirements
+* Data analysis goals: Analyse online retail transaction data to understand customer behaviour, identify popular products, and optimise pricing and marketing strategies. Provide insights into customer behaviour, popular products, and pricing strategies to improve sales and marketing efforts.
+Context
+The "Online Retail Transaction" dataset contains information on customer transactions made through an online retail platform. It includes data on products purchased, quantities, transaction dates and times, prices, customer identifiers, and customer locations. This dataset can be used to analyse customer behaviour and preferences, identify popular products, and optimise pricing and marketing strategies.
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* Hypothesis: Customers who purchase more frequently tend to spend more per transaction.
+* Validation:   Perform a correlation analysis between purchase frequency and average transaction value. Use statistical tests to determine if the relationship is significant. Visualise the data using scatter plots to illustrate the relationship.      
+
+
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+
+### Objectives
+* Clean and preprocess the dataset for analysis.
+* Identify sales trends over time.
+* Understand customer purchasing behavior.
+* Discover top-performing products and countries.
+### Extract
+* Extract data from the dataset using pandas.
+### Transformation
+* Clean the data by handling missing values and removing duplicates.
+* Encode categorical variables and create new features such as total transaction value.
+* Aggregate data to the desired level (e.g., daily, monthly) for analysis.
+* Convert Date columns to proper datetime formats.
+* Create Sales = Unit price * Quantity
+### Load
+Store and cleaned and transformed data in a suitable format (e.g., CSV, database) for analysis.
+
+Build visualizations to communicate findings effectively.
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
@@ -30,10 +56,7 @@
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
-## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
-
+I used generative AI tools to brainstorm ideas for data visualizations and to optimize code snippets for data processing tasks. These tools helped me quickly iterate on design concepts and improve the efficiency of my code.
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
